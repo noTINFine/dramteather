@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ДРАМАТИЧЕСКИЙ ТЕАТР</title>
+	<link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+</head>
+<body>
+
+	<script>
+		function myFunction() {
+  		var input, filter, ul, li, a, i;
+  		input = document.getElementById("mySearch");
+  		filter = input.value.toUpperCase();
+  		ul = document.getElementById("myMenu");
+  		li = ul.getElementsByTagName("li");
+
+  		for (i = 0; i < li.length; i++) {
+    		a = li[i].getElementsByTagName("a")[0];
+    		if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      			li[i].style.display = "";
+    		} else {
+      			li[i].style.display = "none";
+    		}
+  		}
+		}
+	</script>
+
+	<header id="header" class="header">
+		<div class="main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2">
+					</div>
+					<div class="col-lg-7">
+						<h1 class="logo">Драматический театр</h1>
+					</div>
+					<div class="col-lg-3">
+						<div class="phone-n-time" align="right">
+							<img src="img/phone-call.png">
+							8 (800) 555-33-10
+						</div>
+						<div class="phone-n-time1" align="right">
+							<img src="img/clock.png">
+							9:00 - 20:00
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav>
+						<ul class="menu d-flex justify-content-between">
+							<li class="menu__item">
+								<a href="index.html">
+									ГЛАВНАЯ
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="person.html">
+									ТРУППА
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="search.html">
+									РЕПЕРТУАР
+								</a>
+							</li>		
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="block">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>НАШ РЕПЕРТУАР</h1>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="search">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Поиск.." title="Введите категорию">
+
+					<ul id="myMenu">
+  						<li><a href="#sp1">Ревизор</a></li>
+  						<li><a href="#sp2">Мадам Баттерфляй</a></li>
+  						<li><a href="#sp3">Анна Каренина</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<a href="#x" id="sp1"></a>
+
+	<div class="guide">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="date">20 ОКТЯБРЯ</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-5">
+						<a href="revizor.html"><img class="photo" src="img/sp1.png"></a>
+				</div>
+				<div class="col-lg-7">
+					<a href="revizor.html"><div class="name">РЕВИЗОР</div></a>
+					<p class="preview1">Комедия в пяти действиях русского писателя Николая Васильевича Гоголя</p>
+					<p class="preview">Иван Александрович Хлестаков, мелкий чиновник низкого ранга, следует из Петербурга в Саратов со своим слугой Осипом. Проездом они оказываются в небольшом уездном городке...</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<a href="#x" id="sp2"></a>
+
+	<div class="guide__next">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="date">20 ОКТЯБРЯ</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-5">
+						<a href="error.html"><img class="photo" src="img/sp2.png"></a>
+				</div>
+				<div class="col-lg-7">
+					<a href="error.html"><div class="name">МАДАМ БАТТЕРФЛЯЙ</div></a>
+					<p class="preview1">Опера Джакомо Пуччини в трёх актах по мотивам одноимённой драмы Дэвида Беласко</p>
+					<p class="preview">Ф. Б. Пинкертон, офицер военно-морских сил США, влюблён в гейшу Чио-Чио-Сан, известную под именем Баттерфляй, и собирается на ней жениться. Услужливый маклер Горо показывает Пинкертону домик на вершине холма под Нагасаки, в котором пара собирается провести медовый месяц...</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<a href="#x" id="sp3"></a>
+
+	<div class="guide__next">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="date">20 ОКТЯБРЯ</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-5">
+						<a href="error.html"><img class="photo" src="img/sp3.png"></a>
+				</div>
+				<div class="col-lg-7">
+					<a href="error.html"><div class="name">АННА КАРЕНИНА</div></a>
+					<p class="preview1">Пьесса по одноимённому роману Льва Толстого</p>
+					<p class="preview">Дарья Александровна Облонская ссорится со своим мужем Степаном Аркадьевичем Облонским. Дарья в слезах, дети разбежались по дому, прислуга растеряна. Степан надеется на свою сестру Анну, которая непременно должна примирить супругов. К тому же мужу Анны — министру Алексею Каренину — Степан обязан своим местом в присутствии...</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer__logo">Драматический театр</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer__info">Время работы: с 9:00 до 20:00</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-9">
+					<p class="footer__info__email">dramteatr@mail.ru</p>
+					<p class="footer__info__phone">8 (800) 555-33-10 <span class="footer__info__phone__time">9:00 - 20:00</span></p>
+					<p class="footer__info__adress">414 000, Астраханская область, г. Астрахань, Советская ул., 28/25</p>
+				</div>
+				<div class="col-lg-3">
+				  <a href="#" target="blank"><img src="img/youtube.png"></a>
+				  <a href="#" target="blank" class="social"><img src="img/instagram.png"></a>
+				  <a href="#" target="blank" class="social"><img src="img/vk.png"></a>
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
